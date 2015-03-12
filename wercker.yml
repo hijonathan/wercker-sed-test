@@ -5,3 +5,7 @@ build:
         - script:
             name: Sed
             code: sed -i '' -n 'foo/!p' foo
+
+        - script:
+            name: Show
+            code: cat foo
