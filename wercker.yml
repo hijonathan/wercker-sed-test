@@ -4,8 +4,8 @@ build:
     steps:
         - script:
             name: Sed
-            code: sed -i '' -n 'foo/!p' foo
+            code: sed -i '' -n "foo/!p" ./foo
 
         - script:
             name: Show
-            code: cat foo
+            code: cat ./foo
