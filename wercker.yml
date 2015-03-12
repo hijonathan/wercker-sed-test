@@ -4,7 +4,7 @@ build:
     steps:
         - script:
             name: Sed
-            code: sed -i '' -n '/foo/!p' foo
+            code: sed -i '' '/foo/d' foo
 
         - script:
             name: Show
