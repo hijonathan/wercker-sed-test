@@ -1,6 +1,7 @@
 box: wercker/nodejs
+                
 
-build:
+deploy:
     steps:
         - script:
             name: Env.js
@@ -8,7 +9,5 @@ build:
                 mkdir -p $WERCKER_OUTPUT_DIR/__/
                 echo "(function() {window.__env = " $ENV_JSON "})();" > $WERCKER_OUTPUT_DIR/__/env.js
 
-deploy:
-    steps:
         - hijonathan/gh-pages:
             token: $GIT_TOKEN
