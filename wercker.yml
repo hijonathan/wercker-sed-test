@@ -7,3 +7,10 @@ build:
             code: |
                 mkdir -p $WERCKER_OUTPUT_DIR/__/
                 echo "(function() {window.__env = " $ENV_JSON "})();" > $WERCKER_OUTPUT_DIR/__/env.js
+
+deploy:
+    steps:
+        - hijonathan/gh-pages:
+            token: $GIT_TOKEN
+            branch: $DEPLOY_BRANCH
+            srcdir: $WERCKER_OUTPUT_DIR
