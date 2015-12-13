@@ -1,5 +1,10 @@
 box: wercker/nodejs
-                
+
+build:
+    steps:
+        - script:
+            name: Yo
+            code: echo sup world
 
 deploy:
     steps:
