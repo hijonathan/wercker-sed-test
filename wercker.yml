@@ -3,9 +3,7 @@ box: wercker/nodejs
 build:
     steps:
         - script:
-            name: Sed
-            code: sed -i -n '/foo/!p' foo
-
-        - script:
-            name: Show
-            code: cat ./foo
+            name: Env.js
+            code: |
+                mkdir -p $WERCKER_OUTPUT_DIR/__/
+                echo "(function() {window.__env = " $ENV_JSON "})();" > $WERCKER_OUTPUT_DIR/__/env.js
