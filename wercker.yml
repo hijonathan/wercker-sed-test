@@ -11,8 +11,6 @@ deploy:
         - script:
             name: Env.js
             code: |
-                export OUTPUT_DIR="$WERCKER_SOURCE_DIR/__"
-                export ENV_JSON=$ENV_JSON
                 node create-env.js
 
         - hijonathan/gh-pages:
