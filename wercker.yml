@@ -12,5 +12,3 @@ deploy:
     steps:
         - hijonathan/gh-pages:
             token: $GIT_TOKEN
-            branch: $DEPLOY_BRANCH
-            srcdir: $WERCKER_OUTPUT_DIR
