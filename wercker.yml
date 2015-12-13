@@ -11,8 +11,9 @@ deploy:
         - script:
             name: Env.js
             code: |
-                mkdir -p $WERCKER_OUTPUT_DIR/__/
-                echo "(function() {window.__env = " $ENV_JSON "})();" > $WERCKER_OUTPUT_DIR/__/env.js
+                ls $WERCKER_SOURCE_DIR
+                mkdir -p $WERCKER_SOURCE_DIR/__/
+                echo "(function() {window.__env = " $ENV_JSON "})();" > $WERCKER_SOURCE_DIR/__/env.js
 
         - hijonathan/gh-pages:
             token: $GIT_TOKEN
