@@ -8,6 +8,7 @@ try {
     env = JSON.parse(process.env.ENV_JSON);
 } catch (e) {
     env = {};
+    console.log('Failed to parse process env variable.')
 }
 
 envStr = JSON.stringify(env);
