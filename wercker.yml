@@ -14,8 +14,6 @@ deploy:
                 export OUTPUT_DIR="$WERCKER_SOURCE_DIR/__"
                 export ENV_JSON=$ENV_JSON
                 node create-env.js
-                cat "$OUPUT_DIR/env.json"
-                cat "$OUPUT_DIR/env.js"
 
         - hijonathan/gh-pages:
             token: $GIT_TOKEN
