@@ -1,4 +1,4 @@
-box: tablelist/tablelist-node
+box: wercker/nodejs
 
 build:
     steps:
