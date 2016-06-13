@@ -11,11 +11,11 @@ build:
             code: |
                 # Juggle dependencies.
                 mv bower.json _bower.json
-                ./node_modules/.bin/bower install appcues/backbonefire#9a7e4e2a2e8d50e9e3f2d61b9b17e7aab933277b
+                ./node_modules/.bin/bower install appcues/backbonefire#9a7e4e2a2e8d50e9e3f2d61b9b17e7aab933277b --verbose
                 mv _bower.json bower.json
 
                 # Install normally.
-                ./node_modules/.bin/bower install
+                ./node_modules/.bin/bower install --verbose
         # - plasticine/bower-install@0.0.4
 
 # deploy:
