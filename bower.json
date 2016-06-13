@@ -1,0 +1,55 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "main": "gh-pages/javascripts/app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.3",
+    "h5bp-helpers": "~0.1.0",
+    "font-awesome": "~4.3.0",
+    "hint.css": "~1.3.0",
+    "animate.css": "~3.3.0",
+    "momentjs": "~2.10.3",
+    "firebase": "2.3.x",
+    "backbonefire": "git://github.com/appcues/backbonefire.git#50a89f3458e906be6655597f2013b8f5f506112e",
+    "Sortable": "~1.2.1",
+    "moment.twitter": "~0.2.0",
+    "underscore": "~1.8.0",
+    "underscore.string": "~3.0.3",
+    "selectize": "^0.12.1",
+    "chrono": "~1.0.2",
+    "murmurhash3js": "~3.0.0",
+    "tinycolor": "~1.2.1",
+    "rangeslider.js": "~2.0.2",
+    "dropzone": "~4.2.0",
+    "backbone": "1.1.2",
+    "fuzzyurl": "~0.8.2"
+  },
+  "overrides": {
+    "Sortable": {
+      "main": "Sortable.js"
+    },
+    "underscore": {
+      "main": "underscore.js"
+    },
+    "backbone": {
+      "main": "backbone.js",
+      "dependencies": {
+        "underscore": "*"
+      }
+    },
+    "font-awesome": {
+      "main": [
+        "fonts",
+        "css/font-awesome.css"
+      ]
+    }
+  },
+  "resolutions": {
+    "backbone": "1.1.2"
+  }
+}

@@ -5,12 +5,14 @@ build:
         - script:
             name: Yo
             code: echo sup world
+        - npm-install
+        - plasticine/bower-install@0.0.4
 
-deploy:
-    steps:
-        - script:
-            name: Env.js
-            code: ENV_JSON=$ENV_JSON node create-env.js
+# deploy:
+#     steps:
+#         - script:
+#             name: Env.js
+#             code: ENV_JSON=$ENV_JSON node create-env.js
 
-        - hijonathan/gh-pages:
-            token: $GIT_TOKEN
+#         - hijonathan/gh-pages:
+#             token: $GIT_TOKEN
