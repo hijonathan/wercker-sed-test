@@ -1,10 +1,13 @@
-box: wercker/nodejs
+box: tablelist/tablelist-node
 
 build:
     steps:
         - script:
             name: Yo
             code: echo sup world
+        - script:
+            name: Git version
+            code: git --version
         - npm-install
         - plasticine/bower-install@0.0.4
 
